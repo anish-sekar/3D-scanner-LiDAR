@@ -1,3 +1,9 @@
+//
+//  PreviewModalController.swift
+//  UrbanMapper
+//
+//  Created by Prajnya Prabhu on 11/28/20.
+//
 import MobileCoreServices
 import UIKit;
 import SceneKit;
@@ -51,6 +57,12 @@ class PreviewModalController: UIViewController, UIScrollViewDelegate {
             
             if (cgImage != nil) { let converted = UIImage(cgImage: cgImage,scale: 3, orientation: UIImage.Orientation.right)
                 imageArray.append(converted)
+//            let imgView = UIImageView(image: converted)
+//            imgView.contentMode = UIImageView.ContentMode.scaleAspectFit;
+//            //imgView.layer.masksToBounds = true
+//             imgView.clipsToBounds = true;
+//            imgView.center = CGPoint(x: imageDisplayView.frame.size.width  / 2,
+//                                             y: imageDisplayView.frame.size.height / 2)
         }
         
            
@@ -148,7 +160,13 @@ class PreviewModalController: UIViewController, UIScrollViewDelegate {
         let ui_images = convertImages(pictureArray)
         
         setupImages(ui_images)
+        //imageDisplayView.addSubview(imgView)
+        
 
+//        print("assigning image to the imageView")
+//        let imgView = UIImageView(image: image!)
+//        imageDisplayView.addSubview(imgView)
+        
         scene = SCNScene(mdlAsset: asset)
 
                // 2: Add camera node
@@ -185,7 +203,14 @@ class PreviewModalController: UIViewController, UIScrollViewDelegate {
 
                // Allow user translate image
                sceneView.cameraControlConfiguration.allowsTranslation = false
-
+        
+//                let geoText = SCNText(string: "Hello", extrusionDepth: 1.0)
+//        geoText.font = UIFont(name: "Helvetica", size: 0.5)
+//                    let textNode = SCNNode(geometry: geoText)
+//                    scene.rootNode.addChildNode(textNode)
+//                    textNode.position = SCNVector3(x: 0, y: 0, z: 0)
+        
+               
 
                // Set scene settings
                sceneView.scene = scene}
@@ -257,6 +282,40 @@ class PreviewModalController: UIViewController, UIScrollViewDelegate {
         }
     }
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    // Create request
+ 
+//    func createRequest(fileURL: String) throws -> URLRequest {
+//
+//        let boundary = generateBoundaryString()
+//
+//        let url = URL(string: "https://example.com/imageupload.php")!
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
+//
+//        let fileURL = Bundle.main.url(forResource: "image1", withExtension: "png")!
+//        request.httpBody = try createBody(with: parameters, filePathKey: "file", urls: [fileURL], boundary: boundary)
+//
+//        return request
+//    }
+
+    /// Create body of the `multipart/form-data` request
+    ///
+    /// - parameter parameters:   The optional dictionary containing keys and values to be passed to web service.
+    /// - parameter filePathKey:  The optional field name to be used when uploading files. If you supply paths, you must supply filePathKey, too.
+    /// - parameter urls:         The optional array of file URLs of the files to be uploaded.
+    /// - parameter boundary:     The `multipart/form-data` boundary.
+    ///
+    /// - returns:                The `Data` of the body of the request.
 
     private func createBody(with parameters: [String: String]?, filePathKey: String, urls: [URL], boundary: String) throws -> Data {
         var body = Data()
@@ -283,10 +342,21 @@ class PreviewModalController: UIViewController, UIScrollViewDelegate {
         return body
     }
 
+    /// Create boundary string for multipart/form-data request
+    ///
+    /// - returns:            The boundary string that consists of "Boundary-" followed by a UUID string.
+
     private func generateBoundaryString() -> String {
         return "Boundary-\(UUID().uuidString)"
     }
-sful. Returns `application/octet-stream` if unable to determine mime type.
+
+    /// Determine mime type on the basis of extension of a file.
+    ///
+    /// This requires `import MobileCoreServices`.
+    ///
+    /// - parameter path:         The path of the file for which we are going to determine the mime type.
+    ///
+    /// - returns:                Returns the mime type if successful. Returns `application/octet-stream` if unable to determine mime type.
 
     private func mimeType(for path: String) -> String {
         let pathExtension = URL(fileURLWithPath: path).pathExtension as NSString

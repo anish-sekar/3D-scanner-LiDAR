@@ -1,3 +1,9 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Main view controller for the AR experience.
+*/
 
 import Foundation
 import RealityKit
@@ -116,8 +122,41 @@ class NewScanViewController: UIViewController, ARSessionDelegate,UINavigationCon
         if let pixBuf = arView.session.currentFrame?.capturedImage {
         pictureArray.append(pixBuf)
         }
-    }      
- 
+    }
+        
+//        if UIImagePickerController.isSourceTypeAvailable(.camera){
+//               print("Button capture")
+//
+//               imagePicker.delegate = self
+//               imagePicker.sourceType = .camera
+//               imagePicker.showsCameraControls = true
+//
+//               present(imagePicker, animated: true, completion: nil)
+//           }
+//       }
+
+
+    
+//    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
+//        self.dismiss(animated: true, completion: { () -> Void in
+//
+//        })
+//        print("Image sent")
+//        sendingImage = image
+//    }
+    
+//    func imagePickerController(picker: UIImagePickerController!,didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+//        self.dismiss(animated: true, completion: { () -> Void in
+//
+//        })
+//        print("Image sent")
+//        sendingImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+//    }
+//
+
+
+    
+
     
         /// - Tag: TogglePlaneDetection
         @IBAction func togglePlaneDetectionButtonPressed(_ button: UIButton) {
@@ -135,19 +174,24 @@ class NewScanViewController: UIViewController, ARSessionDelegate,UINavigationCon
     }
     
     
+    /// - Tag: Export Mesh
+   
+    
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         print("Save button was pressed")
         guard let frame = arView.session.currentFrame else {
             fatalError("Couldn't get the current ARFrame")
         }
         
+        // Fetch the default MTLDevice to initialize a MetalKit buffer allocator with
         guard let device = MTLCreateSystemDefaultDevice() else {
             fatalError("Failed to get the system's default Metal device!")
         }
         
         print("Basic setup done")
         
-
+        // Using the Model I/O framework to export the scan, so we're initialising an MDLAsset object,
+        // which we can export to a file later, with a buffer allocator
         let allocator = MTKMeshBufferAllocator(device: device)
         asset = MDLAsset(bufferAllocator: allocator)
         
