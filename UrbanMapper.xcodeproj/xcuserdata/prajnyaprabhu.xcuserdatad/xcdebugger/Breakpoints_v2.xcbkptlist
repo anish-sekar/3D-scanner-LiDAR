@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0C5CA89A-ED5D-4374-AA8C-730E4C69CB0E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74583E04-0621-4841-9EE3-320CDA725C58"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UrbanMapper/NewScanViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "NewScanViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "74583E04-0621-4841-9EE3-320CDA725C58 - 8700167bacdba7a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanMapper.NewScanViewController.coachingOverlay.getter : __C.ARCoachingOverlayView"
+                  moduleName = "UrbanMapper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prajnyaprabhu/Desktop/AS_Project/3d%20objects%20viewer/UrbanMapper/UrbanMapper/NewScanViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "74583E04-0621-4841-9EE3-320CDA725C58 - 861bcb8092a40f90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanMapper.NewScanViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; UrbanMapper.NewScanViewController"
+                  moduleName = "UrbanMapper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prajnyaprabhu/Desktop/AS_Project/3d%20objects%20viewer/UrbanMapper/UrbanMapper/NewScanViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "508">
+               </Location>
+               <Location
+                  uuid = "74583E04-0621-4841-9EE3-320CDA725C58 - a8821e6047efd74b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UrbanMapper.NewScanViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;UrbanMapper.NewScanViewController&gt;"
+                  moduleName = "UrbanMapper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prajnyaprabhu/Desktop/AS_Project/3d%20objects%20viewer/UrbanMapper/UrbanMapper/NewScanViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E623797A-7050-4A67-96DB-51F58D77BAAE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UrbanMapper/PreviewModalController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "PreviewModalController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

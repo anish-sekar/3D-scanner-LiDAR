@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E611332B25808DC900A9F2D6 /* LabelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E611332A25808DC900A9F2D6 /* LabelEntity.swift */; };
+		E611333125808E9900A9F2D6 /* ScreenSpaceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E611333025808E9900A9F2D6 /* ScreenSpaceComponent.swift */; };
+		E611333625808F8100A9F2D6 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E611333525808F8100A9F2D6 /* LabelView.swift */; };
+		E611334825809C9400A9F2D6 /* Dragon 2.5_dae.dae in Resources */ = {isa = PBXBuildFile; fileRef = E611334725809C9400A9F2D6 /* Dragon 2.5_dae.dae */; };
 		E6451E5D2570A6F3002C630D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E5C2570A6F3002C630D /* AppDelegate.swift */; };
 		E6451E5F2570A6F3002C630D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E5E2570A6F3002C630D /* SceneDelegate.swift */; };
 		E6451E612570A6F3002C630D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E602570A6F3002C630D /* ViewController.swift */; };
@@ -15,6 +19,12 @@
 		E6451E692570A6F6002C630D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6451E672570A6F6002C630D /* LaunchScreen.storyboard */; };
 		E6451E742570A6F6002C630D /* UrbanMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E732570A6F6002C630D /* UrbanMapperTests.swift */; };
 		E6451E7F2570A6F6002C630D /* UrbanMapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E7E2570A6F6002C630D /* UrbanMapperUITests.swift */; };
+		E6451E942570B045002C630D /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6451E932570B045002C630D /* RealityKit.framework */; };
+		E6451E992570B2FD002C630D /* NewScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E982570B2FD002C630D /* NewScanViewController.swift */; };
+		E6451E9E2570B7E8002C630D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451E9D2570B7E8002C630D /* Extensions.swift */; };
+		E6451EA32570B8DC002C630D /* NewScanViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451EA22570B8DC002C630D /* NewScanViewController+CoachingOverlay.swift */; };
+		E6451EB12572C94E002C630D /* PreviewModalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6451EB02572C94D002C630D /* PreviewModalController.swift */; };
+		E6875EE4258087AA00BB55E4 /* scan (1).obj in Resources */ = {isa = PBXBuildFile; fileRef = E6875EE3258087AA00BB55E4 /* scan (1).obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E611332A25808DC900A9F2D6 /* LabelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelEntity.swift; sourceTree = "<group>"; };
+		E611333025808E9900A9F2D6 /* ScreenSpaceComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScreenSpaceComponent.swift; path = "../../../../CreatingScreenAnnotationsForObjectsInAnARExperience/ScreenSpace-Sample/ViewController/Components/ScreenSpaceComponent.swift"; sourceTree = "<group>"; };
+		E611333525808F8100A9F2D6 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelView.swift; path = "../../../../CreatingScreenAnnotationsForObjectsInAnARExperience/ScreenSpace-Sample/ViewController/Views/LabelView.swift"; sourceTree = "<group>"; };
+		E611334725809C9400A9F2D6 /* Dragon 2.5_dae.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "Dragon 2.5_dae.dae"; path = "../../../../../../Downloads/dae/Dragon 2.5_dae.dae"; sourceTree = "<group>"; };
 		E6451E592570A6F3002C630D /* UrbanMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrbanMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6451E5C2570A6F3002C630D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6451E5E2570A6F3002C630D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,12 @@
 		E6451E7A2570A6F6002C630D /* UrbanMapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrbanMapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6451E7E2570A6F6002C630D /* UrbanMapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanMapperUITests.swift; sourceTree = "<group>"; };
 		E6451E802570A6F6002C630D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6451E932570B045002C630D /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+		E6451E982570B2FD002C630D /* NewScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScanViewController.swift; sourceTree = "<group>"; };
+		E6451E9D2570B7E8002C630D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E6451EA22570B8DC002C630D /* NewScanViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewScanViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
+		E6451EB02572C94D002C630D /* PreviewModalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModalController.swift; sourceTree = "<group>"; };
+		E6875EE3258087AA00BB55E4 /* scan (1).obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "scan (1).obj"; path = "../../../../../Downloads/scan (1).obj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6451E942570B045002C630D /* RealityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E611332925808DA700A9F2D6 /* UiObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E611333525808F8100A9F2D6 /* LabelView.swift */,
+				E611332A25808DC900A9F2D6 /* LabelEntity.swift */,
+			);
+			path = UiObjects;
+			sourceTree = "<group>";
+		};
+		E611332F25808E5400A9F2D6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E611333025808E9900A9F2D6 /* ScreenSpaceComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E611334625809C7C00A9F2D6 /* 3DAssets */ = {
+			isa = PBXGroup;
+			children = (
+				E611334725809C9400A9F2D6 /* Dragon 2.5_dae.dae */,
+			);
+			path = 3DAssets;
+			sourceTree = "<group>";
+		};
 		E6451E502570A6F3002C630D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,7 @@
 				E6451E722570A6F6002C630D /* UrbanMapperTests */,
 				E6451E7D2570A6F6002C630D /* UrbanMapperUITests */,
 				E6451E5A2570A6F3002C630D /* Products */,
+				E6451E922570B045002C630D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +146,10 @@
 		E6451E5B2570A6F3002C630D /* UrbanMapper */ = {
 			isa = PBXGroup;
 			children = (
+				E611334625809C7C00A9F2D6 /* 3DAssets */,
+				E611332F25808E5400A9F2D6 /* Components */,
+				E611332925808DA700A9F2D6 /* UiObjects */,
+				E6875EE3258087AA00BB55E4 /* scan (1).obj */,
 				E6451E5C2570A6F3002C630D /* AppDelegate.swift */,
 				E6451E5E2570A6F3002C630D /* SceneDelegate.swift */,
 				E6451E602570A6F3002C630D /* ViewController.swift */,
@@ -106,6 +157,10 @@
 				E6451E652570A6F6002C630D /* Assets.xcassets */,
 				E6451E672570A6F6002C630D /* LaunchScreen.storyboard */,
 				E6451E6A2570A6F6002C630D /* Info.plist */,
+				E6451E982570B2FD002C630D /* NewScanViewController.swift */,
+				E6451E9D2570B7E8002C630D /* Extensions.swift */,
+				E6451EA22570B8DC002C630D /* NewScanViewController+CoachingOverlay.swift */,
+				E6451EB02572C94D002C630D /* PreviewModalController.swift */,
 			);
 			path = UrbanMapper;
 			sourceTree = "<group>";
@@ -126,6 +181,14 @@
 				E6451E802570A6F6002C630D /* Info.plist */,
 			);
 			path = UrbanMapperUITests;
+			sourceTree = "<group>";
+		};
+		E6451E922570B045002C630D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6451E932570B045002C630D /* RealityKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E611334825809C9400A9F2D6 /* Dragon 2.5_dae.dae in Resources */,
+				E6875EE4258087AA00BB55E4 /* scan (1).obj in Resources */,
 				E6451E692570A6F6002C630D /* LaunchScreen.storyboard in Resources */,
 				E6451E662570A6F6002C630D /* Assets.xcassets in Resources */,
 				E6451E642570A6F3002C630D /* Main.storyboard in Resources */,
@@ -258,9 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6451EB12572C94E002C630D /* PreviewModalController.swift in Sources */,
+				E611333625808F8100A9F2D6 /* LabelView.swift in Sources */,
+				E611332B25808DC900A9F2D6 /* LabelEntity.swift in Sources */,
+				E6451E9E2570B7E8002C630D /* Extensions.swift in Sources */,
+				E6451E992570B2FD002C630D /* NewScanViewController.swift in Sources */,
 				E6451E612570A6F3002C630D /* ViewController.swift in Sources */,
 				E6451E5D2570A6F3002C630D /* AppDelegate.swift in Sources */,
 				E6451E5F2570A6F3002C630D /* SceneDelegate.swift in Sources */,
+				E611333125808E9900A9F2D6 /* ScreenSpaceComponent.swift in Sources */,
+				E6451EA32570B8DC002C630D /* NewScanViewController+CoachingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +509,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "../../../../Downloads/dae/Dragon\\ 2.5_dae.dae";
+				DEVELOPMENT_TEAM = 645WBCG3MD;
 				INFOPLIST_FILE = UrbanMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +529,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "../../../../Downloads/dae/Dragon\\ 2.5_dae.dae";
+				DEVELOPMENT_TEAM = 645WBCG3MD;
 				INFOPLIST_FILE = UrbanMapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
